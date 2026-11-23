@@ -1,0 +1,14 @@
+# Exercise 50 - Python Data Structures
+
+from collections import deque
+pendentes = deque(["Compilar", "Testar", "Publicar"])
+historico = []
+concluidas = []
+while pendentes:
+    tarefa = pendentes.popleft()
+    print("Executando:", tarefa)
+    historico.append(tarefa)
+    concluidas.append(tarefa)
+print("Concluídas:", concluidas)
+if historico:
+    print("Última execução:", historico[-1])

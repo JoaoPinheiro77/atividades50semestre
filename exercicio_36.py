@@ -1,0 +1,12 @@
+# Exercise 36 - Python Data Structures
+
+from collections import deque
+fila = deque([("P1", 5), ("P2", 3), ("P3", 2)])
+quantum = 2
+while fila:
+    nome, restante = fila.popleft()
+    executado = min(quantum, restante)
+    restante -= executado
+    print(nome, "executou", executado)
+    if restante > 0:
+        fila.append((nome, restante))

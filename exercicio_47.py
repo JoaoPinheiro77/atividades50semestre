@@ -1,0 +1,7 @@
+# Exercise 47 - Python Data Structures
+
+arvore = {"P1": ["P2", "P3"],
+          "P2": ["P4"], "P3": [], "P4": []}
+def descendentes(no):
+    return sum(1 + descendentes(f) for f in arvore.get(no, []))
+print("Descendentes de P1:", descendentes("P1"))

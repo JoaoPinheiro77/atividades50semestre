@@ -1,0 +1,9 @@
+# Exercise 49 - Python Data Structures
+
+arvore = {"P1": ["P2", "P3"],
+          "P2": ["P4"], "P3": [], "P4": []}
+pilha = ["P1"]
+while pilha:
+    no = pilha.pop()
+    print(no)
+    pilha.extend(reversed(arvore.get(no, [])))

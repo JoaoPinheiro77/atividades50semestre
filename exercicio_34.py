@@ -1,0 +1,8 @@
+# Exercise 34 - Python Data Structures
+
+from collections import deque
+fila = deque(["P1", "P2", "P3"])
+for _ in range(5):
+    atual = fila[0]
+    print("Executando:", atual)
+    fila.rotate(-1)

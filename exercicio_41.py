@@ -1,0 +1,10 @@
+# Exercise 41 - Python Data Structures
+
+from collections import deque
+arvore = {"P1": ["P2", "P3"],
+          "P2": ["P4"], "P3": [], "P4": []}
+fila = deque(["P1"])
+while fila:
+    no = fila.popleft()
+    print(no)
+    fila.extend(arvore.get(no, []))

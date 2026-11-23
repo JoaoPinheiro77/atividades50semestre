@@ -1,0 +1,7 @@
+# Exercise 04 - Python Data Structures
+
+valores = [3, 5, 8, 2]
+total = 0
+for valor in valores:
+    total += valor
+print("Soma:", total)

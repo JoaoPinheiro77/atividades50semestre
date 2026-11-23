@@ -1,0 +1,11 @@
+# Exercise 20 - Python Data Structures
+
+historico = []
+atual = "Início"
+for pagina in ["Cursos", "Python", "Exercícios"]:
+    historico.append(atual)
+    atual = pagina
+print("Atual:", atual)
+if historico:
+    atual = historico.pop()
+print("Após voltar:", atual)

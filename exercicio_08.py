@@ -1,0 +1,8 @@
+# Exercise 08 - Python Data Structures
+
+valores = [1, 4, 6, 9, 10, 13]
+quantidade = 0
+for valor in valores:
+    if valor % 2 == 0:
+        quantidade += 1
+print("Pares:", quantidade)

@@ -1,0 +1,9 @@
+# Exercise 37 - Python Data Structures
+
+arvore = {
+    "PID 100": ["PID 101", "PID 102", "PID 103"]
+}
+for pai, filhos in arvore.items():
+    print("Pai:", pai)
+    for filho in filhos:
+        print("  Filho:", filho)

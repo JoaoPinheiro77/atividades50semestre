@@ -1,0 +1,8 @@
+# Exercise 11 - Python Data Structures
+
+valores = [2, 3, 2, 5, 3, 7]
+unicos = []
+for valor in valores:
+    if valor not in unicos:
+        unicos.append(valor)
+print(unicos)

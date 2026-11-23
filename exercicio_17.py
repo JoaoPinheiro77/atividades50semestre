@@ -1,0 +1,10 @@
+# Exercise 17 - Python Data Structures
+
+palavra = "PYTHON"
+pilha = []
+for letra in palavra:
+    pilha.append(letra)
+invertida = ""
+while pilha:
+    invertida += pilha.pop()
+print(invertida)

@@ -1,0 +1,7 @@
+# Exercise 25 - Python Data Structures
+
+from collections import deque
+fila = deque()
+for nome in ["Ana", "Beto", "Caio", "Duda"]:
+    fila.append(nome)
+print(list(fila))

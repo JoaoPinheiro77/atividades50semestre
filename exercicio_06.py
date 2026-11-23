@@ -1,0 +1,8 @@
+# Exercise 06 - Python Data Structures
+
+valores = [12, 5, 27, 9]
+maior = valores[0]
+for valor in valores[1:]:
+    if valor > maior:
+        maior = valor
+print("Maior:", maior)

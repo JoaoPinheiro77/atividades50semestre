@@ -1,0 +1,7 @@
+# Exercise 28 - Python Data Structures
+
+from collections import deque
+def esta_vazia(fila):
+    return len(fila) == 0
+print(esta_vazia(deque()))
+print(esta_vazia(deque([5])))

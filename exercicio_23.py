@@ -1,0 +1,10 @@
+# Exercise 23 - Python Data Structures
+
+pilha = [3, 1, 4, 2]
+auxiliar = []
+while pilha:
+    valor = pilha.pop()
+    while auxiliar and auxiliar[-1] > valor:
+        pilha.append(auxiliar.pop())
+    auxiliar.append(valor)
+print("Pilha auxiliar:", auxiliar)

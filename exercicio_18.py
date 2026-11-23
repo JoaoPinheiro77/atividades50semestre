@@ -1,0 +1,14 @@
+# Exercise 18 - Python Data Structures
+
+expressao = "(a + (b * c))"
+pilha = []
+valida = True
+for char in expressao:
+    if char == "(":
+        pilha.append(char)
+    elif char == ")":
+        if not pilha:
+            valida = False
+            break
+        pilha.pop()
+print("Balanceada:", valida and not pilha)

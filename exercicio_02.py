@@ -1,0 +1,7 @@
+# Exercise 02 - Python Data Structures
+
+nomes = []
+for i in range(3):
+    nome = input(f"Nome {i + 1}: ")
+    nomes.append(nome)
+print(nomes)

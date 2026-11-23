@@ -1,0 +1,10 @@
+# Exercise 09 - Python Data Structures
+
+valores = [5, 10, 15, 20]
+procurado = 15
+indice = -1
+for i, valor in enumerate(valores):
+    if valor == procurado:
+        indice = i
+        break
+print("Índice:", indice)

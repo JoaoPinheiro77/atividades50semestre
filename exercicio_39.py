@@ -1,0 +1,13 @@
+# Exercise 39 - Python Data Structures
+
+class No:
+    def __init__(self, nome):
+        self.nome = nome
+        self.filhos = []
+def adicionar(pai, nome):
+    filho = No(nome)
+    pai.filhos.append(filho)
+    return filho
+raiz = No("P100")
+adicionar(raiz, "P101")
+print([n.nome for n in raiz.filhos])

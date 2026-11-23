@@ -1,0 +1,12 @@
+# Exercise 22 - Python Data Structures
+
+tokens = ["3", "4", "+", "2", "*"]
+pilha = []
+for token in tokens:
+    if token.lstrip("-").isdigit():
+        pilha.append(int(token))
+    else:
+        b = pilha.pop()
+        a = pilha.pop()
+        pilha.append(a + b if token == "+" else a * b)
+print("Resultado:", pilha.pop())

@@ -1,0 +1,11 @@
+# Exercise 45 - Python Data Structures
+
+arvore = {"P1": ["P2", "P3"],
+          "P2": ["P4"], "P3": [], "P4": []}
+def folhas(no):
+    filhos = arvore.get(no, [])
+    if not filhos:
+        print(no)
+    for filho in filhos:
+        folhas(filho)
+folhas("P1")

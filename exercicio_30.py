@@ -1,0 +1,8 @@
+# Exercise 30 - Python Data Structures
+
+from collections import deque
+fila = deque(["Ana", "Beto"])
+print("Atendido:", fila.popleft())
+fila.append("Caio")
+while fila:
+    print("Atendido:", fila.popleft())

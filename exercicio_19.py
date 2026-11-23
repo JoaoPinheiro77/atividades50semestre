@@ -1,0 +1,13 @@
+# Exercise 19 - Python Data Structures
+
+numero = 13
+pilha = []
+if numero == 0:
+    pilha.append("0")
+while numero > 0:
+    pilha.append(str(numero % 2))
+    numero //= 2
+binario = ""
+while pilha:
+    binario += pilha.pop()
+print(binario)

@@ -1,0 +1,7 @@
+# Exercise 15 - Python Data Structures
+
+pilha = ["base", "meio", "topo"]
+if pilha:
+    print("Topo:", pilha[-1])
+else:
+    print("Pilha vazia")

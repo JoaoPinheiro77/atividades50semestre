@@ -1,0 +1,6 @@
+# Exercise 29 - Python Data Structures
+
+from collections import deque
+fila = deque(["relatorio.pdf", "aula.pdf", "prova.pdf"])
+while fila:
+    print("Imprimindo:", fila.popleft())
